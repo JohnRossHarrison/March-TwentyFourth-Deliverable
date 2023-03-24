@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "us-west-2"
+  alias  = "west"
+}
+
 /**
  * This module creates the EC2 instance in the subnet of the VPC
  **/

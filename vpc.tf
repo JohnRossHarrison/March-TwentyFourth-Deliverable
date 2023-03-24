@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "us-west-2"
+  alias  = "west"
+}
+
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   providers = {
