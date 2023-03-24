@@ -1,5 +1,9 @@
 /**
- * This module creates the EC2 instance in the subnet of the VPC
+ * Module: EC2 Instance
+ * Source: https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
+ *
+ * This module creates an EC2 instance within the 
+ * first public subnet of the "example-vpc" vpc
  **/
 module "ec2_instance" {
   source = "terraform-aws-modules/ec2-instance/aws"
