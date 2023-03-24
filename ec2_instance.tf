@@ -1,16 +1,8 @@
-provider "aws" {
-  region = "us-west-2"
-  alias  = "west"
-}
-
 /**
  * This module creates the EC2 instance in the subnet of the VPC
  **/
 module "ec2_instance" {
   source = "terraform-aws-modules/ec2-instance/aws"
-  providers = {
-    aws = aws.west
-  }
 
   name = "example-instance"
 

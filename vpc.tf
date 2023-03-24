@@ -1,8 +1,5 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
-  providers = {
-    aws = aws.west
-  }
 
   name = "example-vpc"
   cidr = "10.0.0.0/16"
