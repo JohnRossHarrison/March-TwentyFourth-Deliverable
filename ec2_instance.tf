@@ -10,8 +10,10 @@ module "ec2_instance" {
 
   name = "example-instance"
 
+  // Define the attributes of the instance
   ami           = "ami-0efa651876de2a5ce"
   instance_type = "t2.micro"
 
+  // Define the subnet the instance is launched in
   subnet_id = module.vpc.public_subnets[0]
 }
