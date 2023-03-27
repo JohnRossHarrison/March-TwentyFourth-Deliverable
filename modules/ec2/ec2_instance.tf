@@ -27,4 +27,5 @@ module "yaml_ec2" {
   name = each.value.name
   ami = each.value.ami
   instance_type = each.value.type
+  subnet_id = var.subnet
 }
