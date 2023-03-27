@@ -26,5 +26,5 @@ module "yaml_ec2" {
   for_each = { for instance in local.ec2_object_list : "${instance.name}" => instance }
   name = each.value.name
   ami = each.value.ami
-  type = each.value.type
+  instance_type = each.value.type
 }
