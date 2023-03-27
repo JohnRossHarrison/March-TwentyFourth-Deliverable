@@ -1,0 +1,3 @@
+name: instance-one
+type: t2.micro
+ami: ami-0efa651876de2a5ce
